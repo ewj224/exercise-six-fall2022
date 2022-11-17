@@ -9,9 +9,11 @@ nav {
   justify-content: flex-end;
   margin: 0 auto;
   max-width: 1080px;
+  width: 100%;
 }
 
 nav p {
+  color: black;
   font-size: 16px;
   font-weight: bold;
   margin: 0;
@@ -21,7 +23,7 @@ nav p {
 
 .PageWrapper {
   margin: 0;
-  max-width: 1200px;
+  max-width: 1080px;
   padding: 25px;
 }
 
@@ -43,6 +45,7 @@ nav p {
 }
 
 .FormElement button {
+  font-size: 16px;
   margin-top: 20px;
   padding: 10px;
 }
