@@ -7,7 +7,7 @@ function UserProfilePage({ isLoading, isLoggedIn, setIsLoggedIn, setUserInformat
 
     useEffect(()=>{
         if (!isLoggedIn && !isLoading) navigate('/login');
-    }, [isLoading, isLoggedIn])
+    }, [isLoading, isLoggedIn, navigate])
 
     return (
         <>
