@@ -1,4 +1,4 @@
-import {useEffect, useState, useCallback} from 'react';
+import {useEffect, useState} from 'react';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {initializeApp} from 'firebase/app';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
