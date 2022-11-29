@@ -1,7 +1,7 @@
 import {useEffect, useState, useCallback} from 'react';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {initializeApp} from 'firebase/app';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 ////////17:30
 
@@ -10,29 +10,6 @@ import './App.css';
 import CreateUserPage from "./pages/CreateUser";
 import LoginPage from "./pages/Login";
 import UserProfilePage from "./pages/UserProfile";
-import CreateUserForm from './components/CreateUserForm';
-import Header from "./components/Header";
-
-function CreatPage() {
-  const signUpUser = useCallback(
-    (e) => {
-      e.preventDefault();
-
-      const email = e.currentTarget.email.value;
-      const password = e.currentTarget.password.value;
-
-      // const auth = getAuth();
-
-      // createUserWithEmailAndPassword(auth, email, password)
-      //   .then((userCredential)=>{
-      //     const user = userCredential.user
-      //     setLoggedIn(true)
-      //   })
-
-    }
-  )
-}
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyBY_jkE0onva7ytd1-w3zuxA0_42x0qSeA",
