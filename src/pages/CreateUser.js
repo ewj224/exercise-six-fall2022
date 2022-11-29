@@ -1,4 +1,4 @@
-import React, { useCallBack, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
 import CreateUserForm from '../components/CreateUserForm';
@@ -12,7 +12,7 @@ function CreateUserPage({ isLoggedIn, setIsLoggedIn, setUserInformation}){
         if (isLoggedIn) navigate('/');
     }, [isLoggedIn]);
 
-    const signUpUser = useCallBack(
+    const signUpUser = useCallback(
         (e) => {
             e.preventDefault();
 
@@ -45,9 +45,11 @@ function CreateUserPage({ isLoggedIn, setIsLoggedIn, setUserInformation}){
     );  
 
 
+
     return (
         <>
             <Header 
+                isLoggedIn={isLoggedIn}
                 setIsLoggedIn={setIsLoggedIn} 
                 setUserInformation={setUserInformation}
             />

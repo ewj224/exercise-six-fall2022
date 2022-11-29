@@ -14,11 +14,13 @@ nav {
 
 nav p {
   color: black;
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   margin: 0;
   /* you can reset the margin like this so that you can change things again */
   margin-left: 40px;
+  text-decoration: underline;
 }
 
 .PageWrapper {

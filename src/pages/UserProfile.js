@@ -12,6 +12,7 @@ function UserProfilePage({ isLoading, isLoggedIn, setIsLoggedIn, setUserInformat
     return (
         <>
             <Header 
+                isLoggedIn={isLoggedIn}
                 setIsLoggedIn={setIsLoggedIn} 
                 setUserInformation={setUserInformation}
             />
